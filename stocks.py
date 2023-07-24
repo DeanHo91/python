@@ -1,3 +1,4 @@
+#WILL FIX
 import time
 import random
 
@@ -14,6 +15,7 @@ prices = {
 }
 
 balance = 1000
+holdings = {}
 
 def calculate_net_worth():
     net_worth = balance
@@ -21,18 +23,20 @@ def calculate_net_worth():
         net_worth += price * holdings.get(stock, 0)
     return net_worth
 
-holdings = {}
-
 while True:
     for stock in prices:
         prices[stock] += random.uniform(-10, 10)
         prices[stock] = max(prices[stock], 0)
     
     print(f"Current Prices:\nGold: {prices['gold']:.2f}\nSilver: {prices['silver']:.2f}\nApple: {prices['apple']:.2f}\nBoeing: {prices['boeing']:.2f}\nDaimler AG: {prices['daimlerag']:.2f}\nGeneral Electric: {prices['generalelectric']:.2f}\nShell: {prices['shell']:.2f}\nUnited Airlines: {prices['unitedairlines']:.2f}\nNike: {prices['nike']:.2f}\n")
+    
     net_worth = calculate_net_worth()
     print(f"Your Balance: {balance:.2f}\nYour Holdings: {holdings}\nYour Net Worth: {net_worth:.2f}\n")
     
+    print("Prices refresh every 5 seconds.")
+    
     action = input("Do you want to buy or sell a stock? ")
+    
     if action.lower() == "buy":
         stock = input("Which stock do you want to buy? ")
         if stock in prices:
@@ -63,4 +67,4 @@ while True:
     else:
         print("Invalid action.")
     
-    time.sleep(10)
+    time.sleep(5)
