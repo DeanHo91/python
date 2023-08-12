@@ -1,4 +1,4 @@
-#BIGGEST NUMBER: 18
+#BIGGEST NUMBER: 1811
 
 #Special
 go = 0
