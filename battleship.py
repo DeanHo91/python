@@ -1,4 +1,4 @@
-#EXTREMELY BUGGY, WILL FIX
+#EXTREMELY BUGGY, WILL FIX!!!
 import random
 
 board = [['-' for _ in range(20)] for _ in range(20)]
