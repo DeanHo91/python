@@ -1,4 +1,5 @@
 #EXTREMELY BUGGY, WILL FIX!!!
+#Really need support from the community
 import random
 
 board = [['-' for _ in range(20)] for _ in range(20)]
