@@ -31,3 +31,6 @@ PennsylvaniaRailroad = 15
 brown = [MediterraneanAvenue, BalticAvenue]
 light_blue = [OrientalAvenue, VermontAvenue, ConnecticutAvenue]
 pink = [StCharlesPlace, StatesAvenue, VirginiaAvenue]
+
+
+step = 0
