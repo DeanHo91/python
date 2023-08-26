@@ -1,8 +1,30 @@
 import random
 
+#Define chance and community chest cards
+chance = {
+    0: 'Advance to "Go". (Collect $200)',
+    1: 'Advance to Illinois Ave. If you pass Go, collect $200.',
+    2: 'Advance to St. Charles Place. If you pass Go, collect $200.',
+    3: 'Advance token to the nearest Utility. If unowned, you may buy it from the Bank. If owned, throw dice and pay owner a total 10 (ten) times the amount thrown.',
+    4: 'Advance to the nearest Railroad. If unowned, you may buy it from the Bank. If owned, pay owner twice the rent to which they are otherwise entitled. If Railroad is unowned, you may buy it from the Bank. (First card, there are 2 of these)',
+    5: 'Advance to the nearest Railroad. If unowned, you may buy it from the Bank. If owned, pay owner twice the rent to which they are otherwise entitled. If Railroad is unowned, you may buy it from the Bank. (Second card, there are 2 of these)',
+    6: 'Bank pays you dividend of $50.',
+    7: 'Get out of Jail Free. This card may be kept until needed, or traded/sold.',
+    8: 'Go Back Three Spaces.',
+    9: 'Go to Jail. Go directly to Jail. Do not pass GO, do not collect $200.',
+    10: 'Make general repairs on all your property: For each house pay $25, For each hotel pays $100.',
+    11: 'Take a trip to Reading Railroad. Advance token to Reading Railroad. If you pass Go, collect $200.',
+    12: 'Pay Poor Tax of $15.',
+    13: 'Take a walk on the Boardwalk. Advance token to Boardwalk.',
+    14: 'You have been elected Chairman of the Board. Pay each player $50.',
+    15: 'Your building loan matures. Receive $150.'
+}
+community_chest = {
+    
+}
 # Define the properties and their positions
 properties = {
-    0: 'Start',
+    0: 'Go',
     1: 'Mediterranean Avenue',
     2: 'Community Chest',
     3: 'Baltic Avenue',
